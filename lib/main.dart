@@ -3,7 +3,6 @@ import 'package:cental_project/dashboard.dart';
 import 'package:cental_project/profile.dart';
 import 'package:cental_project/profile_invoice.dart';
 import 'package:cental_project/tab_battle.dart';
-import 'package:cental_project/user_profile.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: UserProfile(),
+      home: Profile(),
     );
   }
 }
