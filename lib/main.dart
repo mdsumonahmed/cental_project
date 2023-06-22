@@ -1,3 +1,4 @@
+import 'package:cental_project/apidata.dart';
 import 'package:cental_project/bottomnavigation.dart';
 import 'package:cental_project/dashboard.dart';
 import 'package:cental_project/jesondata.dart';
@@ -19,8 +20,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      //home: BottomNavigation(),
-      home: JesonData(),
+      home: BottomNavigation(),
+      //home: JesonData(),
+      //home: ApiData(),
     );
   }
 }

@@ -11,29 +11,95 @@ class CountFunction extends StatefulWidget {
 
 class _MyWidgetState extends State<CountFunction> {
   int count = 1;
+  BoxState boxstate = BoxState.cross;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(count.toString()),
-          ElevatedButton(
-              onPressed: () {
-                setState(() {
-                  count++;
-                });
-              },
-              child: Text('Increase')),
-          ElevatedButton(
-              onPressed: () {
-                setState(() {
-                  count--;
-                });
-              },
-              child: Text('Decrease')),
+      body: GridView.count(
+        crossAxisCount: 3,
+        mainAxisSpacing: 5,
+        crossAxisSpacing: 5,
+        children: <Widget>[
+          Container(
+            color: Colors.blue,
+            child: boxstate == BoxState.cross
+                ? const Icon(Icons.close)
+                : boxstate == BoxState.circle
+                    ? const Icon(Icons.circle)
+                    : Container(),
+          ),
+          Container(
+            color: Colors.blue,
+            child: boxstate == BoxState.cross
+                ? const Icon(Icons.close)
+                : boxstate == BoxState.circle
+                    ? const Icon(Icons.circle)
+                    : Container(),
+          ),
+          Container(
+            color: Colors.blue,
+            child: boxstate == BoxState.cross
+                ? const Icon(Icons.close)
+                : boxstate == BoxState.circle
+                    ? const Icon(Icons.circle)
+                    : Container(),
+          ),
+          Container(
+            color: Colors.blue,
+            child: boxstate == BoxState.cross
+                ? const Icon(Icons.close)
+                : boxstate == BoxState.circle
+                    ? const Icon(Icons.circle)
+                    : Container(),
+          ),
+          Container(
+            color: Colors.blue,
+            child: boxstate == BoxState.cross
+                ? const Icon(Icons.close)
+                : boxstate == BoxState.circle
+                    ? const Icon(Icons.circle)
+                    : Container(),
+          ),
+          Container(
+            color: Colors.blue,
+            child: boxstate == BoxState.cross
+                ? const Icon(Icons.close)
+                : boxstate == BoxState.circle
+                    ? const Icon(Icons.circle)
+                    : Container(),
+          ),
+          Container(
+            color: Colors.blue,
+            child: boxstate == BoxState.cross
+                ? const Icon(Icons.close)
+                : boxstate == BoxState.circle
+                    ? const Icon(Icons.circle)
+                    : Container(),
+          ),
+          Container(
+            color: Colors.blue,
+            child: boxstate == BoxState.cross
+                ? const Icon(Icons.close)
+                : boxstate == BoxState.circle
+                    ? const Icon(Icons.circle)
+                    : Container(),
+          ),
+          Container(
+            color: Colors.blue,
+            child: boxstate == BoxState.cross
+                ? const Icon(Icons.close)
+                : boxstate == BoxState.circle
+                    ? const Icon(Icons.circle)
+                    : Container(),
+          ),
         ],
       ),
     );
   }
+}
+
+enum BoxState {
+  cross,
+  circle,
+  empty,
 }
