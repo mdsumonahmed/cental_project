@@ -6,6 +6,7 @@ import 'package:cental_project/profile.dart';
 import 'package:cental_project/profile_invoice.dart';
 import 'package:cental_project/tab_battle.dart';
 import 'package:flutter/material.dart';
+import 'package:weather/weather.dart';
 
 void main() {
   runApp(const MyApp());

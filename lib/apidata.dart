@@ -46,7 +46,8 @@ class _MyWidgetState extends State<ApiData> {
                 child: ListTile(
                   leading: CircleAvatar(
                     radius: 60,
-                    child: Text(data[index]["id"].toString()),
+                    //child: Text(data[index]["id"].toString()),
+                    backgroundImage: NetworkImage(data[index]["url"]),
                   ),
                   title: Text(data[index]["title"]),
                 ),
